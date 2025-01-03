@@ -139,7 +139,7 @@ h1 {
 }
 
 .git-link{
-    margin: 40px auto 0;
+    margin: 0 auto 5px;
     display: block;
     width: 40px;
 }
@@ -150,7 +150,7 @@ h1 {
 }
 
 .git-link:hover img{
-    background: radial-gradient(circle at 50% 50%, hsl(354.49deg 100% 51.57% / 65%), hsl(0deg 0% 100% / 0%));
+    background: radial-gradient(circle at 50% 50%, hsl(244.22deg 100% 51.57% / 52%), hsl(0deg 0% 100% / 0%));
 }
 
 .flex-example {
