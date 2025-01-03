@@ -59,15 +59,18 @@ h2 {
 }
 
 .ar-inter-block  .ar-desc p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
+    font-style: italic;
 }
 
 .documentation {
+    box-shadow: inset 0px 0px 30px 1px #98803a;
     border-radius: 10px;
     background-color: #fff;
     color: #333;
     padding: 30px;
+    font-style: italic;
     font-size: 16px;
     margin-bottom: 50px;
 }
@@ -120,12 +123,19 @@ h2 {
 .documentation pre {
     background: #ededed;
     border-radius: 0 10px 10px 0;
-    border-left: 3px solid #ff3b4d;
+    border-left: 3px solid #eca500;
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 13.5px;
     width: 100%;
     box-sizing: border-box;
     overflow-x: auto;
+    font-style: normal;
+}
+
+.documentation img {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
 }
 
 .git-link{
@@ -143,6 +153,25 @@ h2 {
     background: radial-gradient(circle at 50% 50%, hsl(354.49deg 100% 51.57% / 65%), hsl(0deg 0% 100% / 0%));
 }
 
+.flex-example {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-example .ar-inter-block{
+    margin-top: 20px;
+}
+
+.flex-example h4{
+    margin-bottom: 0;
+}
+
+.flex-example .flex-child{
+    width: 100%;
+    text-align: center;
+}
+
 @media (max-width: 992px) {   
     h2{
         font-size: 30px;
@@ -150,61 +179,171 @@ h2 {
     }
 }
 
+
 .ar-inter-block .ar-img{
+    background-size: 102%;
     background-image: url(img/tolkin.jpg);
 }
 
-.ar-img span:nth-child(1){
+#ar-inter1 {
+    justify-content: center;
+}
+
+#ar-inter .right {
+    box-shadow: inset 0px 0px 30px 1px #98803a;
+}
+ 
+#ar-inter3,
+#ar-inter4 {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#ar-inter3 .left,
+#ar-inter4 .left,
+#ar-inter3 .right,
+#ar-inter4 .right {
+    width: 60%;
+    margin: 0;
+}
+
+#ar-inter4 .ar-btn-title {
+    justify-content: center;
+}
+
+#ar-inter3 .right,
+#ar-inter4 .right {
+    padding: 10px;
+}
+
+#ar-inter2 .right,
+#ar-inter5 .right {
+    border: 1px solid #935c24;
+    text-align: left;
+}
+.ar-inter-block .ar-btn-title button,
+.ar-inter-block .ar-img span::before {
+    font-style: italic;
+}
+#ar-inter1 .ar-img,
+#ar-inter2 .ar-img,
+#ar-inter3 .ar-img,
+#ar-inter4 .ar-img,
+#ar-inter5 .ar-img{
+    background-size: 102%;
+    background-image: url(img/tolkin-white.jpg);
+}
+
+.ar-inter-block .ar-img .ar-btn1{
     left: 27%;
     bottom: 70%;
 }
 
-.ar-img span:nth-child(2){
+.ar-inter-block.ar-active .ar-btn-title .ar-btn0 {
+    font-style: normal;
+}
+
+.ar-inter-block .ar-img .ar-btn2{
     left: 81%;
     bottom: 23%;
 }
 
-.ar-img span:nth-child(3){
+.ar-inter-block .ar-img .ar-btn3{
     left: 44%;
     bottom: 27%;
 }
 
-.ar-img span:nth-child(4){
+.ar-inter-block .ar-img .ar-btn4{
     left: 52%;
     bottom: 70%;
 }
 
-.ar-img span:nth-child(5){
+.ar-inter-block .ar-img .ar-btn5{
     left: 69%;
     bottom: 79%;
 }
 
-.ar-inter-block .ar-btn1 {
+.ar-inter-block .ar-img.ar-btn1 {
     background-size: 460% !important;
     background-position-x: 25% !important;
     background-position-y: 20% !important;
 }
 
-.ar-inter-block .ar-btn2 {
+.ar-inter-block .ar-img.ar-btn2 {
     background-size: 335% !important;
     background-position-x: 95% !important;
     background-position-y: 78% !important;
 }
 
-.ar-inter-block .ar-btn3 {
+.ar-inter-block .ar-img.ar-btn3 {
     background-size: 430% !important;
     background-position-x: 45% !important;
     background-position-y: 71% !important;
 }
 
-.ar-inter-block .ar-btn4 {
+.ar-inter-block .ar-img.ar-btn4 {
     background-size: 550% !important;
     background-position-x: 55% !important;
     background-position-y: 20% !important;
 }
 
-.ar-inter-block .ar-btn5 {
+.ar-inter-block .ar-img.ar-btn5 {
     background-size: 530% !important;
     background-position-x: 75% !important;
     background-position-y: 11% !important;
+}
+
+#ar-inter5 .ar-img.ar-btn1 {
+    background-image: url(img/shir.jpg);
+    background-size: 120% !important;
+    background-position-x: 0% !important;
+    background-position-y: 0% !important;
+}
+
+#ar-inter5 .ar-img.ar-btn2 {
+    background-image: url(img/mordor.jpg);
+    background-size: 150% !important;
+    background-position-x: 40% !important;
+    background-position-y: 0% !important;
+}
+
+#ar-inter5 .ar-img.ar-btn3 {
+    background-image: url(img/gondor.jpg);
+    background-size: 130% !important;
+    background-position-x: 100% !important;
+    background-position-y: 30% !important;
+}
+
+#ar-inter5 .ar-img.ar-btn4 {
+    background-image: url(img/rivendel.jpg);
+    background-size: 160% !important;
+    background-position-x: 50% !important;
+    background-position-y: 0% !important;
+}
+
+#ar-inter5 .ar-img.ar-btn5 {
+    background-image: url(img/erebor.jpg);
+    background-size: 200% !important;
+    background-position-x: 50% !important;
+    background-position-y: 50% !important;
+}
+
+.ar-inter-block .ar-img .ar-btn1::before{
+    content: 'Шир';
+}
+
+.ar-inter-block .ar-img .ar-btn2::before{
+    content: 'Мордор';
+}
+
+.ar-inter-block .ar-img .ar-btn3::before{
+    content: 'Гондор';
+}
+
+.ar-inter-block .ar-img .ar-btn4::before{
+    content: 'Ривендел';
+}
+
+.ar-inter-block .ar-img .ar-btn5::before{
+    content: 'Эребор';
 }

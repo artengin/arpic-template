@@ -1,6 +1,11 @@
 //Вызов функции
 if (document.querySelector('#ar-inter')) {
     arInter('#ar-inter', 2560, 2005);
+    arInter('#ar-inter1', 2560, 2005);
+    arInter('#ar-inter2', 2560, 2005);
+    arInter('#ar-inter3', 2560, 2005);
+    arInter('#ar-inter4', 2560, 2005);
+    arInter('#ar-inter5', 2560, 2005);
 }
 
 function arInter(doc, widthImage, heightImage) {
