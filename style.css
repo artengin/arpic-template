@@ -54,7 +54,7 @@ section{
     color: #fff;
 }
 
-h2 {
+h1 {
     font-size: 40px;
 }
 
@@ -173,7 +173,7 @@ h2 {
 }
 
 @media (max-width: 992px) {   
-    h2{
+    h1{
         font-size: 30px;
         text-align: center;
     }

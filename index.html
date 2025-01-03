@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Компонент - интерактивные метки на изображении</title>
+        <meta name="description" content="Компонент позволяет создавать интерактивное изображение с метками. Компонент написан на HTML, CSS, JS">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="github.com/artengin">
         <link rel="stylesheet" href="artag.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <section>
             <div class="container">
-                <h2>Интерактивные метки на изображении</h2>
+                <h1>Интерактивные метки на изображении</h1>
             
                 <div class="ar-inter-block" id="ar-inter">
                     <div class="left">
@@ -60,7 +62,7 @@
                     <p>Данный компонент позволяет создавать адаптивные изображения с интерактивные метками.<br>Компонент по умолчанию поддерживает до 50 меток на изображении.</p>
                     <p>Для начала работы необходимо подключить файлы <span class="css">artag.css</span> и <span class="js">artag.js</span></p>
                     <p>Скачать исходники можно на <a href="https://github.com/artengin/artengin.github.io" target="_blank"><span class="css" style="border-bottom: 2px dashed #ff2626">GitHub</span></a></p>
-                    <h4>В HTML документе создаем блок с интерактивными метками на изображении:</h4>
+                    <h4>В <span class="css">HTML</span> документе создаем блок с интерактивными метками на изображении:</h4>
                     <code>
                         <pre>
 &lt;div class="ar-inter-block" id="ar-inter"&gt; 
@@ -100,7 +102,7 @@
                         <li>Не рекомендуется создавать или менять классы у элементов.<br>
                             При необходимости подключайтесь к уже созданным классам через CSS и кастомизируйте под собственный проект.</li>
                     </ul>
-                    <h4>В CSS необходимо настроить изображение и позицию меток:</h4>
+                    <h4>В <span class="css">CSS</span> необходимо настроить изображение и позицию меток:</h4>
                     <p>Вы можете записать следующие строки в своем файле CSS:</p>
                     <ul>
                         <li>Указываем путь до главного изображения<br>
@@ -158,7 +160,7 @@
     content: 'Шир';
 }</pre>
                     </code>
-                    <h4>В JS необходимо вызвать функцию arInter():</h4><ul>
+                    <h4>В <span class="css">JS</span> необходимо вызвать функцию arInter():</h4><ul>
                         <li>Вызов функции Вы можете прописать в любом js файле, подключенным в HTML после artag.js</li>
                         <li>Вызывать функцию arInter() необходимо для каждого блока</li>
                         <li>Обязательные атрибуты функции arInter(): id блока, ширина изображения, высота изображения<br>
