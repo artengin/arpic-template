@@ -179,6 +179,12 @@ h1 {
     }
 }
 
+#ar-inter3 .left,
+#ar-inter4 .left,
+#ar-inter3 .right,
+#ar-inter4 .right {
+    width: 100% !important;;
+}
 
 .ar-inter-block .ar-img{
     background-size: 102%;
